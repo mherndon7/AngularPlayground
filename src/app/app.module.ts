@@ -9,16 +9,17 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { MessagesComponent } from './messages/messages.component';
+import { MessagesComponent } from './message/message.component';
 
 @NgModule({
-  declarations: [AppComponent, MessagesComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HeroesComponent,
     HeroDetailComponent,
+    MessagesComponent,
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
