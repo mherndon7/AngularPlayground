@@ -11,8 +11,14 @@ import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, HeroDetailComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HeroesComponent],
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HeroesComponent,
+    HeroDetailComponent,
+  ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
