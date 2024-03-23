@@ -9,6 +9,13 @@ const routes: Routes = [
       import('./heroes/heroes.component').then((m) => m.HeroesComponent),
   },
   {
+    path: 'detail/:id',
+    loadComponent: () =>
+      import('./hero-detail/hero-detail.component').then(
+        (m) => m.HeroDetailComponent
+      ),
+  },
+  {
     path: 'dashboard',
     loadComponent: () =>
       import('./dashboard/dashboard.component').then(
