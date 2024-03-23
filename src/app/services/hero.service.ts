@@ -1,14 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Hero } from '../interfaces/hero';
-import { HEROES } from '../data/mock-heroes';
 import { Observable, catchError, of, tap } from 'rxjs';
 import { MessageService } from './message.service';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
 })
 export class HeroService {
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+  };
+
   private heroesUrl = 'api/heroes'; // URL to web api
 
   constructor(
@@ -29,6 +32,14 @@ export class HeroService {
     return this.http.get<Hero>(url).pipe(
       tap(() => this.log(`fetched hero id=${id}`)),
       catchError(this.handleError<Hero>(`getHero id=${id}`))
+    );
+  }
+
+  /** PUT: update the hero on the server */
+  updateHero(hero: Hero): Observable<any> {
+    return this.http.put(this.heroesUrl, hero, this.httpOptions).pipe(
+      tap((_) => this.log(`updated hero id=${hero.id}`)),
+      catchError(this.handleError<any>('updateHero'))
     );
   }
 
