@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="2">
     <diagram name="Dark" id="lye6Jjw_iSvx5hqJg524">
-        <mxGraphModel dx="-1891" dy="624" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="-1212" dy="905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -294,6 +294,15 @@
                 </mxCell>
                 <mxCell id="3" value="Sim Time" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="jyjrXBeGag7pcf7ObZyp-269">
                     <mxGeometry x="360" y="132" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Preview" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="jyjrXBeGag7pcf7ObZyp-269">
+                    <mxGeometry x="630" y="589" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#33373b;strokeColor=#6c757d;" vertex="1" parent="jyjrXBeGag7pcf7ObZyp-269">
+                    <mxGeometry x="590" y="594" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=2;shape=mxgraph.ios7.misc.check;strokeColor=#0080f0;" vertex="1" parent="jyjrXBeGag7pcf7ObZyp-269">
+                    <mxGeometry x="595" y="599" width="10" height="8" as="geometry"/>
                 </mxCell>
                 <mxCell id="jyjrXBeGag7pcf7ObZyp-298" value="" style="swimlane;startSize=0;fillColor=none;swimlaneFillColor=#33373b;strokeColor=none;" parent="jyjrXBeGag7pcf7ObZyp-207" vertex="1">
                     <mxGeometry x="20" y="820" width="710" height="700" as="geometry"/>
